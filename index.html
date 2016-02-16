@@ -3,6 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" src="js/img_tranform.js"></script>
     <title>index</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
         </div>
     </div>
     <div class="wrap">
-        <div class="slider">
+        <div id="slider" class="slider">
             <a><img src="img/img1.jpg"/></a>
             <a><img src="img/img2.jpg"/></a>
             <a><img src="img/img3.jpg"/></a>
@@ -34,10 +35,10 @@
         </div>
         <div class="block">
             <ul class="block-selecter">
-                <li class="block-option"></li>
-                <li class="block-option"></li>
-                <li class="block-option"></li>
-                <li class="block-option"></li>
+                <li class="block-option" val="0" onclick="change(this)"></li>
+                <li class="block-option" val="1" onclick="change(this)"></li>
+                <li class="block-option" val="2" onclick="change(this)"></li>
+                <li class="block-option" val="3" onclick="change(this)"></li>
             </ul>
         </div>
     </div>

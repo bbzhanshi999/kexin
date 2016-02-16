@@ -85,10 +85,12 @@ body a:hover {
     overflow: hidden;
     position: relative;
 }
-
+.slider{
+    position: absolute;
+}
 .wrap img {
     width: 960px;
-    height: 600px;
+    height: 300px;
 }
 
 .block {
