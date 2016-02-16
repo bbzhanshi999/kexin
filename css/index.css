@@ -2,12 +2,15 @@ body {
     font-family: "微软雅黑";
     font-size: 16px;
 }
-body a{
+
+body a {
     text-decoration: none;
 }
-body a:hover{
-    color:red;
+
+body a:hover {
+    color: red;
 }
+
 .main {
     margin: 0 auto;
     width: 1000px;
@@ -44,26 +47,28 @@ body a:hover{
 .nav-bar li.active {
     border-bottom: 4px solid red;
 }
+
 /*设置间隔线的css，在li中加入一个透明的span标签，使得li标签有高度，然后通过设置li标签背景渐变获得渐变效果的线*/
 .nav-bar li.interval {
     width: 1px;
     padding: 15px 0px;
-    background: -webkit-linear-gradient(gainsboro, black,gainsboro); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(gainsboro, black,gainsboro); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(gainsboro, black,gainsboro); /* Firefox 3.6 - 15 */
-    background: linear-gradient(gainsboro, black,gainsboro);
+    background: -webkit-linear-gradient(gainsboro, black, gainsboro); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(gainsboro, black, gainsboro); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(gainsboro, black, gainsboro); /* Firefox 3.6 - 15 */
+    background: linear-gradient(gainsboro, black, gainsboro);
 }
-.nav-bar li.interval span{
+
+.nav-bar li.interval span {
     border: 2px solid transparent;
 }
+
 /*设置渐变线结束*/
 
-
-.button {
+.button-box {
     display: inline-block;
 }
 
-.button input {
+.button-box input {
     margin-left: 20px;
     padding: 5px 15px;
     border: 0px;
@@ -73,32 +78,35 @@ body a:hover{
     cursor: pointer;
 }
 
-.wrap{
+.wrap {
     margin: 0 auto;
     width: 960px;
-    height:300px;
+    height: 300px;
     overflow: hidden;
     position: relative;
 }
 
-.wrap img{
+.wrap img {
     width: 960px;
     height: 600px;
 }
-.block{
+
+.block {
     position: absolute;
     top: 270px;
-    width:100%;
+    width: 100%;
     height: 30px;
-    background:rgba(0,0,0,0.3);
-    background:#000\9;/*CSS Hack,只能对ie9以下浏览器ie6,ie7,ie8有效，否侧ie10,FF,Cherome会失去透明效果*/
-    filter:Alpha(opacity=30);/*只对ie7,ie8有效*/
+    background: rgba(0, 0, 0, 0.3);
+    background: #000 \9; /*CSS Hack,只能对ie9以下浏览器ie6,ie7,ie8有效，否侧ie10,FF,Cherome会失去透明效果*/
+    filter: Alpha(opacity=30); /*只对ie7,ie8有效*/
     z-index: 11;
 }
-.block-selecter{
+
+.block-selecter {
     margin: 5px auto;
 }
-.block-option{
+
+.block-option {
     margin-left: 20px;
     display: inline-block;
     width: 20px;
@@ -110,96 +118,231 @@ body a:hover{
     cursor: pointer;
 }
 
-.content{
+.content {
     margin: 10px auto;
     width: 960px;
     background-color: #F2F2F2;
-    border:1px solid #CBCBCB;
+    border: 1px solid #CBCBCB;
+
 }
 
-.content-left{
+.content-left {
     display: inline-block;
     margin-left: 10px;
     overflow: hidden;
-    width:680px;
+    width: 680px;
+    vertical-align: top;
 }
-.content-right{
+
+.content-right {
+    padding-left: 10px;
     display: inline-block;
     margin-right: 10px;
     overflow: hidden;
-    width:270px
+    width: 240px;
+    vertical-align: top;
 }
 
-.article{
+.article {
     margin: 15px 0;
-    padding:15px 15px 0 15px ;
+    padding: 15px 15px 0 15px;
     background-color: white;
-    height:105px;
+    height: 105px;
     font-size: 12px;
+    box-shadow: 3px 3px 2px #d3d3d3;
 }
-.imgbox{
+
+.imgbox {
     display: inline-block;
-    height:105px;
-    width:138px;
+    height: 105px;
+    width: 138px;
     overflow: hidden;
     position: relative;
 }
-.imgbox-flag-yes{
+
+.imgbox-flag-yes {
     text-align: center;
     line-height: 30px;
     color: white;
     position: absolute;
     height: 30px;
     width: 50px;
-    background:rgba(255,0,0,0.7);
-    background:#FF0000 \9;/*CSS Hack,只能对ie9以下浏览器ie6,ie7,ie8有效，否侧ie10,FF,Cherome会失去透明效果*/
-    filter:Alpha(opacity=30);/*只对ie7,ie8有效*/
+    background: rgba(255, 0, 0, 0.7);
+    background: #FF0000 \9; /*CSS Hack,只能对ie9以下浏览器ie6,ie7,ie8有效，否侧ie10,FF,Cherome会失去透明效果*/
+    filter: Alpha(opacity=30); /*只对ie7,ie8有效*/
     z-index: 3;
 }
-.imgbox img{
+
+.imgbox img {
     height: 90px;
-    width:138px;
+    width: 138px;
 }
-.box{
+
+.box {
     margin-left: 20px;
     display: inline-block;
-    height:105px;
+    height: 105px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.title-box{
-   width: 480px;
+
+.title-box {
+    width: 480px;
 }
-.title{
+
+.title {
     font-weight: bold;
     text-overflow: ellipsis;
-    white-space:nowrap;
+    white-space: nowrap;
     overflow: hidden;
-    width:400px;
+    width: 400px;
 }
-.title a{
+
+.title a {
     color: black;
 }
-.detail{
+
+.detail {
     float: right
 }
-.detail a{
+
+.detail a {
     color: darkred;
 }
-.date{
+
+.date {
     margin: 0;
-    padding:3px 0;
+    padding: 3px 0;
     clear: both;
     color: gray;
 }
-.description{
-    width:400px;
-    height:60px;
+
+.description {
+    width: 400px;
+    height: 60px;
     margin: 0;
     line-height: 20px;
     font-size: 12px;
     white-space: normal;
     text-overflow: ellipsis;
     overflow: hidden;
-    width:400px;
+    width: 400px;
+}
+
+.right-row {
+    width: 100%;
+}
+
+.right-row input {
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.input-text {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    width: 160px;
+    height: 26px;
+    border: 1px solid grey;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border: 0px;
+    height: 26px;
+    width: 60px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-box {
+    width:100%
+}
+.filter{
+    box-shadow: 3px 2px 2px #d3d3d3;
+    width: 64px;
+    height: 28px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
+    background-color: #FFF;
+    margin-bottom: 10px;
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.note{
+    width: 99%;
+    border: 1px solid grey;
+    margin: 30px auto;
+}
+
+.note-title {
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    background: -webkit-linear-gradient( #EFEFEF, gainsboro); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#EFEFEF, gainsboro); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#EFEFEF, gainsboro); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#EFEFEF, gainsboro);
+}
+.note-sort{
+    vertical-align: top;
+    display: inline-block;
+    width: 95px;
+    background-color:#F1F1F1;
+    margin: 0 0;
+    padding: 0 0 ;
+}
+.note-sort li{
+    font-size: 14px;
+    width: 95px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    list-style-type:none;
+    background-color:#F1F1F1;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    cursor: pointer;
+}
+.note-sort li.active{
+    background-color: white;
+    width: 95px;
+    cursor:default;
+
+}
+
+.note-list {
+    box-shadow: -3px 0 2px #d3d3d3;
+    visibility: hidden;
+    vertical-align: top;
+    display: inline-block;
+    width: 137px;
+    background-color: white;
+    margin: 1px 0;
+    padding: 0 0 ;
+}
+.show{
+    visibility: visible;
+}
+.note-list li{
+    font-size: 12px;
+    width: 137px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    list-style-type:none;
+    background-color:white;
+    border-bottom: 1px dashed grey;
 }
